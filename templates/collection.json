@@ -1,0 +1,134 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "page_header_color_scheme": "",
+        "page_header_center_text": true,
+        "page_header_heading_size": "h1",
+        "page_header_image_overlay": 43,
+        "page_header_image_size": "medium",
+        "page_header_scroll_clip": true,
+        "page_header_overlap": true
+      }
+    },
+    "marquee_CG8Ckr": {
+      "type": "marquee",
+      "blocks": {
+        "text_e6hKi9": {
+          "type": "text",
+          "settings": {
+            "text": "50% Sale",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_e6hKi9"
+      ],
+      "disabled": true,
+      "name": "Marquee",
+      "settings": {
+        "color_scheme": "red",
+        "content_size": "h1",
+        "type": "auto",
+        "stop_on_hover": false,
+        "direction": "normal",
+        "speed": "1",
+        "space_between": "medium"
+      }
+    },
+    "collection": {
+      "type": "collection",
+      "settings": {
+        "desktop_columns": "4",
+        "mobile_columns": "2",
+        "color_scheme": "",
+        "gyro_effect": true,
+        "display_products": 50,
+        "pagination_type": "pages",
+        "enable_filters": true,
+        "desktop_filters_layout": "drawer",
+        "enable_sorting": true,
+        "filter_drawer_color_scheme": ""
+      }
+    },
+    "hero_background_video_R6r6fV": {
+      "type": "hero-background-video",
+      "blocks": {
+        "countdown_dR4wRa": {
+          "type": "countdown",
+          "settings": {
+            "time": "31-09-2025"
+          }
+        },
+        "heading_WpYApR": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "En savoir plus sur moi",
+            "heading_size": "h1"
+          }
+        },
+        "description_GAmwGN": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_content": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_iQKPa3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Présentation",
+            "button_variant": "outline",
+            "show_arrow": false,
+            "button_size": "md",
+            "button_link": ""
+          }
+        },
+        "description_GtfVbP": {
+          "type": "description",
+          "settings": {
+            "text_content": "<p>Au cas où, mon nom c'est Adrien Cardot !</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "countdown_dR4wRa",
+        "heading_WpYApR",
+        "description_GAmwGN",
+        "button_iQKPa3",
+        "description_GtfVbP"
+      ],
+      "name": "Hero background video",
+      "settings": {
+        "banner_video": "shopify://files/videos/Vidéo de présentation Adrien Cardot  Expert Shopify.mp4",
+        "banner_overlay": 31,
+        "banner_size": "medium",
+        "gyro_effect": true,
+        "scroll_clip": false,
+        "text_align": "center",
+        "content_position": "bottom-center",
+        "content_box": false,
+        "color_scheme": ""
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "marquee_CG8Ckr",
+    "collection",
+    "hero_background_video_R6r6fV"
+  ]
+}

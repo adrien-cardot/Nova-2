@@ -1,0 +1,356 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "brand_logo": "shopify://shop_images/Black_and_White_Minimalist_Music_Studio_Logo_1.png",
+    "brand_logo_width": 140,
+    "brand_text_logo": "Adrien CARDOT",
+    "appearance_animate_heading_on_mobile": true,
+    "appearance_pill_buttons": true,
+    "appearance_enable_smooth_scroll": true,
+    "appearance_hide_scrollbar": true,
+    "colors_yellow_starrating": true,
+    "typography_heading_font": "poppins_n7",
+    "typography_heading_letter_spacing": "wide",
+    "typography_body_font": "inter_n4",
+    "typography_buttons_letter_spacing": "x-wide",
+    "typography_navigation_letter_spacing": "normal",
+    "cart_type": "drawer",
+    "product_card_show_vendor": false,
+    "product_card_enable_quick_buy": true,
+    "product_card_show_rating": false,
+    "currency_show_currency_codes": false,
+    "type_heading_font": "poppins_n7",
+    "type_heading_transform": "uppercase",
+    "type_heading_letter_spacing": 170,
+    "type_subheading_font": "body",
+    "type_subheading_font_scale": 90,
+    "type_subheading_letter_spacing": 190,
+    "type_subheading_text_transform": "uppercase",
+    "type_body_font": "inter_n4",
+    "button_letter_spacing": 180,
+    "button_text_transform": "uppercase",
+    "content_for_index": [],
+    "color_schemes": {
+      "main": {
+        "settings": {
+          "text": "#282828",
+          "background": "#ffffff",
+          "background_gradient": "",
+          "button_text": "#ffffff",
+          "button_background": "#282828"
+        }
+      },
+      "invert": {
+        "settings": {
+          "text": "#ffffff",
+          "background": "#282828",
+          "background_gradient": "",
+          "button_text": "#282828",
+          "button_background": "#ffffff"
+        }
+      },
+      "alt": {
+        "settings": {
+          "text": "#282828",
+          "background": "#e6e6e6",
+          "background_gradient": "",
+          "button_text": "#ffffff",
+          "button_background": "#282828"
+        }
+      },
+      "red": {
+        "settings": {
+          "text": "#ffffff",
+          "background": "#ff0000",
+          "background_gradient": "",
+          "button_text": "#ff0000",
+          "button_background": "#ffffff"
+        }
+      },
+      "alt-2": {
+        "settings": {
+          "text": "#ffffff",
+          "background": "#282828",
+          "background_gradient": "radial-gradient(rgba(79, 43, 23, 1) 1%, rgba(29, 25, 23, 1) 80%)",
+          "button_text": "#282828",
+          "button_background": "#ffffff"
+        }
+      },
+      "alt-3": {
+        "settings": {
+          "text": "#ffffff",
+          "background": "#322e36",
+          "background_gradient": "linear-gradient(132deg, rgba(101, 90, 57, 1), rgba(0, 0, 0, 1) 52%)",
+          "button_text": "#000000",
+          "button_background": "#ffffff"
+        }
+      }
+    }
+  },
+  "installed_preset_name": "Nova",
+  "presets": {
+    "Nova": {
+      "brand_logo_width": 80,
+      "appearance_pill_buttons": true,
+      "appearance_hide_scrollbar": true,
+      "colors_yellow_starrating": true,
+      "typography_heading_font": "poppins_n7",
+      "typography_heading_letter_spacing": "wide",
+      "typography_body_font": "inter_n4",
+      "typography_buttons_letter_spacing": "x-wide",
+      "typography_navigation_letter_spacing": "normal",
+      "product_card_show_vendor": false,
+      "product_card_enable_quick_buy": true,
+      "product_card_show_rating": false,
+      "currency_show_currency_codes": false,
+      "type_heading_font": "poppins_n7",
+      "type_heading_transform": "uppercase",
+      "type_heading_letter_spacing": 170,
+      "type_subheading_font": "body",
+      "type_subheading_font_scale": 90,
+      "type_subheading_letter_spacing": 190,
+      "type_subheading_text_transform": "uppercase",
+      "type_body_font": "inter_n4",
+      "button_letter_spacing": 180,
+      "button_text_transform": "uppercase",
+      "content_for_index": [],
+      "color_schemes": {
+        "main": {
+          "settings": {
+            "text": "#282828",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "button_text": "#ffffff",
+            "button_background": "#282828"
+          }
+        },
+        "invert": {
+          "settings": {
+            "text": "#e2e2e2",
+            "background": "#282828",
+            "background_gradient": "",
+            "button_text": "#282828",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt": {
+          "settings": {
+            "text": "#282828",
+            "background": "#e6e6e6",
+            "background_gradient": "",
+            "button_text": "#ffffff",
+            "button_background": "#282828"
+          }
+        },
+        "red": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#ff0000",
+            "background_gradient": "",
+            "button_text": "#ff0000",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt-2": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#282828",
+            "background_gradient": "radial-gradient(rgba(79, 43, 23, 1) 1%, rgba(29, 25, 23, 1) 80%)",
+            "button_text": "#282828",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt-3": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#322e36",
+            "background_gradient": "linear-gradient(132deg, rgba(101, 90, 57, 1), rgba(0, 0, 0, 1) 52%)",
+            "button_text": "#000000",
+            "button_background": "#ffffff"
+          }
+        }
+      }
+    },
+    "Lumen": {
+      "brand_logo_width": 50,
+      "appearance_heading_animation": "perspective",
+      "appearance_pill_buttons": true,
+      "typography_heading_font": "urbanist_n7",
+      "typography_heading_size": "large",
+      "typography_heading_letter_spacing": "normal",
+      "typography_heading_capitalize": false,
+      "typography_body_font": "dm_sans_n4",
+      "typography_body_font_scale": 1.1,
+      "typography_buttons_font": "heading",
+      "typography_buttons_letter_spacing": "x-wide",
+      "typography_navigation_font": "heading",
+      "typography_navigation_letter_spacing": "wide",
+      "typography_navigation_capitalize": true,
+      "type_heading_font": "poppins_n7",
+      "type_heading_transform": "uppercase",
+      "type_heading_letter_spacing": 170,
+      "type_subheading_font": "body",
+      "type_subheading_font_scale": 90,
+      "type_subheading_letter_spacing": 190,
+      "type_subheading_text_transform": "uppercase",
+      "type_body_font": "inter_n4",
+      "button_letter_spacing": 180,
+      "button_text_transform": "uppercase",
+      "content_for_index": [],
+      "color_schemes": {
+        "main": {
+          "settings": {
+            "text": "#282828",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "button_text": "#ffffff",
+            "button_background": "#282828"
+          }
+        },
+        "invert": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#282828",
+            "background_gradient": "",
+            "button_text": "#282828",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt": {
+          "settings": {
+            "text": "#282828",
+            "background": "#e6e6e6",
+            "background_gradient": "",
+            "button_text": "#ffffff",
+            "button_background": "#282828"
+          }
+        },
+        "red": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#ff0000",
+            "background_gradient": "",
+            "button_text": "#ff0000",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt-2": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#282828",
+            "background_gradient": "radial-gradient(rgba(79, 43, 23, 1) 1%, rgba(29, 25, 23, 1) 80%)",
+            "button_text": "#282828",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt-3": {
+          "settings": {
+            "text": "#282828",
+            "background": "#ffffff",
+            "background_gradient": "radial-gradient(rgba(255, 255, 255, 1), rgba(232, 246, 255, 1) 100%)",
+            "button_text": "#ffffff",
+            "button_background": "#282828"
+          }
+        }
+      }
+    },
+    "Orion": {
+      "brand_logo_width": 50,
+      "appearance_heading_animation": "reveal",
+      "appearance_pill_buttons": false,
+      "appearance_hide_scrollbar": true,
+      "colors_yellow_starrating": true,
+      "typography_heading_font": "oswald_n4",
+      "typography_heading_size": "medium",
+      "typography_heading_letter_spacing": "normal",
+      "typography_heading_capitalize": false,
+      "typography_body_font": "lato_n4",
+      "typography_body_font_scale": 1.2,
+      "typography_buttons_font": "heading",
+      "typography_buttons_letter_spacing": "normal",
+      "typography_buttons_capitalize": true,
+      "typography_navigation_letter_spacing": "normal",
+      "typography_navigation_capitalize": false,
+      "product_card_center_text": false,
+      "product_card_show_vendor": false,
+      "product_card_enable_quick_buy": true,
+      "product_card_show_rating": true,
+      "currency_show_currency_codes": false,
+      "type_heading_font": "poppins_n7",
+      "type_heading_transform": "uppercase",
+      "type_heading_letter_spacing": 170,
+      "type_subheading_font": "body",
+      "type_subheading_font_scale": 90,
+      "type_subheading_letter_spacing": 190,
+      "type_subheading_text_transform": "uppercase",
+      "type_body_font": "inter_n4",
+      "button_letter_spacing": 180,
+      "button_text_transform": "uppercase",
+      "content_for_index": [],
+      "color_schemes": {
+        "main": {
+          "settings": {
+            "text": "#282828",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "button_text": "#ffffff",
+            "button_background": "#282828"
+          }
+        },
+        "invert": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#282828",
+            "background_gradient": "",
+            "button_text": "#282828",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt": {
+          "settings": {
+            "text": "#282828",
+            "background": "#e6e6e6",
+            "background_gradient": "",
+            "button_text": "#ffffff",
+            "button_background": "#282828"
+          }
+        },
+        "red": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#ff0000",
+            "background_gradient": "linear-gradient(143deg, rgba(249, 32, 32, 1), rgba(165, 28, 28, 1) 100%)",
+            "button_text": "#ff0000",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt-2": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#282828",
+            "background_gradient": "radial-gradient(rgba(158, 158, 158, 1) 11%, rgba(33, 32, 24, 1) 87%)",
+            "button_text": "#ffffff",
+            "button_background": "#ffffff"
+          }
+        },
+        "alt-3": {
+          "settings": {
+            "text": "#ffffff",
+            "background": "#282828",
+            "background_gradient": "radial-gradient(rgba(73, 72, 72, 1) 12%, rgba(33, 33, 30, 1) 88%)",
+            "button_text": "#282828",
+            "button_background": "#ffffff"
+          }
+        }
+      }
+    }
+  }
+}

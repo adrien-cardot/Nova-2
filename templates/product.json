@@ -1,0 +1,502 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product": {
+      "type": "product",
+      "blocks": {
+        "liquid_content_Nz67Hh": {
+          "type": "liquid_content",
+          "settings": {
+            "liquid_content": "<style>\n.project-meta {\n  display: flex;\n  align-items: center;\n  gap: 14px;\n  font-family: inherit;\n  flex-wrap: wrap;\n}\n\n/* Type de mission */\n.project-meta__mission {\n  font-size: 15px;\n  font-weight: 600;\n  padding: 4px 10px;\n  border: 1px solid currentColor;\n  border-radius: 6px;\n  line-height: 1.2;\n}\n\n/* Infos secondaires (secteur + année) */\n.project-meta__details {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  font-size: 15px;\n  font-weight: 500;\n  color: #444;\n}\n\n/* Séparateur */\n.project-meta__sep {\n  color: #bbb;\n  user-select: none;\n}\n</style>\n\n{% assign mission = product.metafields.custom.toutes_les_infos_sur_notre_travail.value.type_de_mission_resume_en_2_3_mots.value %}\n{% assign sector = product.metafields.custom.toutes_les_infos_sur_ce_projet.value.secteur_d_activite_en_3_mots_max.value %}\n{% assign year   = product.metafields.custom.toutes_les_infos_sur_notre_travail.value.anneedu_projet.value %}\n\n<div class=\"project-meta\">\n\n  {% if mission != blank %}\n    <span class=\"project-meta__mission\">{{ mission }}</span>\n  {% endif %}\n\n  {% if sector != blank or year != blank %}\n  <div class=\"project-meta__details\">\n\n    {% if sector != blank %}\n      <span>{{ sector }}</span>\n    {% endif %}\n\n    {% if sector != blank and year != blank %}\n      <span class=\"project-meta__sep\">•</span>\n    {% endif %}\n\n    {% if year != blank %}\n      <span>{{ year }}</span>\n    {% endif %}\n\n  </div>\n  {% endif %}\n\n</div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "show_vendor": false,
+            "show_rating": true
+          }
+        },
+        "text_with_icon_pndEt3": {
+          "type": "text_with_icon",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.metafields.custom.toutes_les_infos_sur_ce_projet.value.paragraphe_presentation_du_client | metafield_tag }}",
+            "show_icon": false,
+            "feature_icon_svg": "smiley",
+            "feature_icon_size": "medium",
+            "icon_position": "left"
+          }
+        },
+        "liquid_content_cQQBUi": {
+          "type": "liquid_content",
+          "settings": {
+            "liquid_content": "<style>\n  .tags-list {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 8px;\n    justify-content: flex-start; /* Toujours aligné à gauche */\n  }\n  .tag-item {\n    border: 1px solid #000;\n    border-radius: 12px;\n    padding: 3px 8px;\n    font-weight: bold;\n    font-size: 12px;\n    white-space: nowrap;\n  }\n  @media(max-width: 600px) {\n    .tags-list {\n      gap: 6px; /* réduction légère du gap sur mobile */\n    }\n    .tag-item {\n      font-size: 11px;\n      padding: 3px 6px;\n    }\n  }\n</style>\n\n{% if product.metafields.custom.toutes_les_infos_sur_notre_travail.value.liste_des_actions_realisees_separe_d_un %}\n  <div class=\"tags-list\">\n    {% assign items = product.metafields.custom.toutes_les_infos_sur_notre_travail.value.liste_des_actions_realisees_separe_d_un.value | split: \"+\" %}\n    {% for item in items %}\n      {% assign trimmed = item | strip %}\n      {% if trimmed != \"\" %}\n        <span class=\"tag-item\">{{ trimmed }}</span>\n      {% endif %}\n    {% endfor %}\n  </div>\n{% endif %}"
+          }
+        },
+        "collapse_KyiLaM": {
+          "type": "collapse",
+          "settings": {
+            "heading": "Présentation de {{ product.title }}",
+            "text": "{{ product.metafields.custom.toutes_les_infos_sur_ce_projet.value.paragraphe_presentation_du_client | metafield_tag }}<p></p>",
+            "page": "",
+            "show_icon": false,
+            "feature_icon_svg": "smiley",
+            "feature_icon_size": "medium"
+          }
+        },
+        "collapse_XBqCyH": {
+          "type": "collapse",
+          "settings": {
+            "heading": "Le besoin du client",
+            "text": "{{ product.metafields.custom.toutes_les_infos_sur_ce_projet.value.paragraphe_besoin_s_du_clients_ses_problemes | metafield_tag }}",
+            "page": "",
+            "show_icon": false,
+            "feature_icon_svg": "smiley",
+            "feature_icon_size": "medium"
+          }
+        },
+        "collapse_7MnmBp": {
+          "type": "collapse",
+          "settings": {
+            "heading": "Résultats après mon travail",
+            "text": "{{ product.metafields.custom.toutes_les_infos_sur_notre_travail.value.bilan_resultat_apres_notre_travail | metafield_tag }}",
+            "page": "",
+            "show_icon": false,
+            "feature_icon_svg": "smiley",
+            "feature_icon_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_content_Nz67Hh",
+        "title",
+        "text_with_icon_pndEt3",
+        "liquid_content_cQQBUi",
+        "collapse_KyiLaM",
+        "collapse_XBqCyH",
+        "collapse_7MnmBp"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_sticky_buy_bar": true,
+        "enable_share": false,
+        "sticky_media": true,
+        "media_position": "left",
+        "media_size": "medium",
+        "thumbs_position": "bottom",
+        "gallery_ratio": "landscape",
+        "media_fit": "original",
+        "enable_autoplay": true
+      }
+    },
+    "rich_text_jTEd8F": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_whGBrB": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "{{ product.metafields.custom.titre_en_quoi_ce_projet_est_fort.value }}",
+            "heading_animation": true,
+            "heading_size": "h2"
+          }
+        },
+        "description_KKhyqD": {
+          "type": "description",
+          "settings": {
+            "text_content": "{{ product.metafields.custom.description_en_quoi_ce_projet_est_fort | metafield_tag }}",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_whGBrB",
+        "description_KKhyqD"
+      ],
+      "custom_css": [],
+      "name": "Rich text",
+      "settings": {
+        "color_scheme": "",
+        "text_align": "center",
+        "image_overlay": 30,
+        "blur_image": false
+      }
+    },
+    "image_with_text_PXPPVF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_H86Cch": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "{{ product.metafields.custom.focus_1.value.titre.value }}",
+            "heading_animation": true,
+            "heading_size": "h2"
+          }
+        },
+        "description_XjKzfb": {
+          "type": "description",
+          "settings": {
+            "text_content": "{{ product.metafields.custom.focus_1.value.description | metafield_tag }}",
+            "enlarge_text": false
+          }
+        },
+        "button_XYHjG4": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop all",
+            "button_variant": "outline",
+            "show_arrow": false,
+            "button_size": "md",
+            "button_link": "{{ product.metafields.custom.toutes_les_infos_sur_ce_projet.value.url_du_site_du_client.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_H86Cch",
+        "description_XjKzfb",
+        "button_XYHjG4"
+      ],
+      "name": "IMAGE Focus 1",
+      "settings": {
+        "color_scheme": "",
+        "hover_parallax": true,
+        "use_bg": false,
+        "image": "{{ product.metafields.custom.focus_1.value.image.value }}",
+        "image_position": "left",
+        "image_width": "medium",
+        "image_size": "auto",
+        "text_align": "left",
+        "content_position": "middle-center"
+      }
+    },
+    "video_with_text_QD4Ya9": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_irgDrJ": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "{{ product.metafields.custom.focus_1.value.titre.value }}",
+            "heading_animation": true,
+            "heading_size": "h1"
+          }
+        },
+        "description_WB3g4X": {
+          "type": "description",
+          "settings": {
+            "text_content": "{{ product.metafields.custom.focus_1.value.description | metafield_tag }}",
+            "enlarge_text": false
+          }
+        },
+        "button_rpyrhU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop all",
+            "button_variant": "outline",
+            "show_arrow": false,
+            "button_size": "md",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_irgDrJ",
+        "description_WB3g4X",
+        "button_rpyrhU"
+      ],
+      "name": "Video FOCUS 1",
+      "settings": {
+        "color_scheme": "",
+        "hover_parallax": true,
+        "use_bg": false,
+        "video": "{{ product.metafields.custom.focus_1.value.video_facultatif_mais_remplace_l_image.value }}",
+        "video_position": "left",
+        "video_width": "medium",
+        "video_size": "auto",
+        "text_align": "left",
+        "content_position": "middle-center"
+      }
+    },
+    "image_with_text_LyRF3f": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8qmn76": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "{{ product.metafields.custom.focus_2.value.titre.value }}",
+            "heading_animation": true,
+            "heading_size": "h2"
+          }
+        },
+        "description_AxaHkW": {
+          "type": "description",
+          "settings": {
+            "text_content": "{{ product.metafields.custom.focus_2.value.description | metafield_tag }}",
+            "enlarge_text": false
+          }
+        },
+        "button_qxbrhC": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop all",
+            "button_variant": "outline",
+            "show_arrow": false,
+            "button_size": "md",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_8qmn76",
+        "description_AxaHkW",
+        "button_qxbrhC"
+      ],
+      "name": "Focus 2",
+      "settings": {
+        "color_scheme": "",
+        "hover_parallax": true,
+        "use_bg": false,
+        "image": "{{ product.metafields.custom.focus_2.value.image.value }}",
+        "image_position": "right",
+        "image_width": "medium",
+        "image_size": "auto",
+        "text_align": "left",
+        "content_position": "middle-center"
+      }
+    },
+    "video_with_text_MiNNxJ": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_kkbUDz": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "{{ product.metafields.custom.focus_2.value.titre.value }}",
+            "heading_animation": true,
+            "heading_size": "h1"
+          }
+        },
+        "description_PLE9AA": {
+          "type": "description",
+          "settings": {
+            "text_content": "{{ product.metafields.custom.focus_2.value.description | metafield_tag }}",
+            "enlarge_text": false
+          }
+        },
+        "button_XF8hUf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop all",
+            "button_variant": "outline",
+            "show_arrow": false,
+            "button_size": "md",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_kkbUDz",
+        "description_PLE9AA",
+        "button_XF8hUf"
+      ],
+      "name": "Video Focus 2",
+      "settings": {
+        "color_scheme": "",
+        "hover_parallax": true,
+        "use_bg": false,
+        "video_position": "right",
+        "video_width": "medium",
+        "video_size": "auto",
+        "text_align": "left",
+        "content_position": "middle-center"
+      }
+    },
+    "compared_images_rVaWUU": {
+      "type": "compared-images",
+      "blocks": {
+        "before_image_E7XAMG": {
+          "type": "beforeImage",
+          "settings": {
+            "image": "{{ product.metafields.custom.toutes_les_infos_sur_notre_travail.value.avant_apres_en_image_facultatif.value.image_avant.value }}",
+            "heading_text": "Avant",
+            "subheading_text": "{{ product.metafields.custom.toutes_les_infos_sur_notre_travail.value.avant_apres_en_image_facultatif.value.courte_explication_avant_4_mots_max.value }}",
+            "text_content": "",
+            "color_scheme": ""
+          }
+        },
+        "after_image_8gctPA": {
+          "type": "afterImage",
+          "settings": {
+            "image": "{{ product.metafields.custom.toutes_les_infos_sur_notre_travail.value.avant_apres_en_image_facultatif.value.image_apres.value }}",
+            "heading_text": "Après",
+            "subheading_text": "{{ product.metafields.custom.toutes_les_infos_sur_notre_travail.value.avant_apres_en_image_facultatif.value.courte_explication_apres_4_mots_max.value }}",
+            "text_content": "",
+            "color_scheme": "main"
+          }
+        }
+      },
+      "block_order": [
+        "before_image_E7XAMG",
+        "after_image_8gctPA"
+      ],
+      "name": "Compared images",
+      "settings": {
+        "section_heading": "Avant/Après",
+        "section_heading_size": "h1",
+        "section_heading_animation": true,
+        "section_center_heading": true,
+        "section_description": "{{ product.metafields.custom.toutes_les_infos_sur_notre_travail.value.avant_apres_en_image_facultatif.value.paragraphe_explication_de_ce_qu_on_a_fait.value }}",
+        "section_color_scheme": "",
+        "image_size": "auto",
+        "text_position": "bottom"
+      }
+    },
+    "testimonials_9rkT7z": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_j3PWip": {
+          "type": "testimonial",
+          "settings": {
+            "image": "{{ product.metafields.custom.toutes_les_infos_sur_ce_projet.value.retour_client_avis.value.image.value }}",
+            "rating": 5,
+            "author": "",
+            "author_subheading": "",
+            "heading": "",
+            "content": "{{ product.metafields.custom.toutes_les_infos_sur_ce_projet.value.retour_client_avis.value.feedback_client_avis.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_j3PWip"
+      ],
+      "custom_css": [],
+      "name": "Testimonials",
+      "settings": {
+        "single_testimonial_center": true,
+        "section_heading": "feedback",
+        "section_heading_size": "h1",
+        "section_heading_animation": true,
+        "section_center_heading": true,
+        "section_description": "{{ product.title }} a accepté de partager son retour d'expérience sur mon travail :",
+        "section_color_scheme": "",
+        "stack_grid_layout": "grid",
+        "stack_grid_desktop_columns": "2",
+        "show_rating": true,
+        "gyro_effect": true,
+        "center_content": true,
+        "round_image": true,
+        "card_color_scheme": ""
+      }
+    },
+    "multicolumn_p7Ugw8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xnd6LU": {
+          "type": "column",
+          "settings": {
+            "link": "",
+            "subheading_text": "",
+            "heading_text": "Accompagnement de {{ product.title }}",
+            "text_content": "Conseils stratégique, audit et accompagnement complet pour le bon développement du shop",
+            "button_label": "",
+            "button_variant": "outline"
+          }
+        },
+        "column_mwcGBh": {
+          "type": "column",
+          "settings": {
+            "link": "",
+            "subheading_text": "",
+            "heading_text": "Expert Shopify",
+            "text_content": "Travail propre et optimisé pour les performances de la boutique, avec un focus sur le SEO.",
+            "button_label": "",
+            "button_variant": "outline"
+          }
+        },
+        "column_jh7Xhn": {
+          "type": "column",
+          "settings": {
+            "link": "",
+            "subheading_text": "",
+            "heading_text": "Formation des équipes",
+            "text_content": "Boutique facilement personnalisable par le client via l'éditeur de thème",
+            "button_label": "",
+            "button_variant": "outline"
+          }
+        },
+        "column_BbyBCw": {
+          "type": "column",
+          "settings": {
+            "link": "",
+            "subheading_text": "",
+            "heading_text": "Toujours libre...",
+            "text_content": "Mission finalisée : mon client n'est pas dépendant de moi, il peut gérer son site de A à Z",
+            "button_label": "",
+            "button_variant": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "column_xnd6LU",
+        "column_mwcGBh",
+        "column_jh7Xhn",
+        "column_BbyBCw"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "section_heading": "Valeur ajoutée",
+        "section_heading_size": "h2",
+        "section_heading_animation": true,
+        "section_center_heading": true,
+        "section_description": "Je ne me contente pas de créer un site : je prends en charge l’ensemble du projet e-commerce. Ma valeur ajoutée dépasse largement le simple design pour englober tout ce qui contribue à la performance et au succès de votre boutique en ligne.",
+        "section_color_scheme": "alt-3",
+        "stack_grid_layout": "stack",
+        "stack_grid_desktop_columns": "3",
+        "stack_grid_mobile_columns": "1",
+        "heading_size": "h5",
+        "card_display_style": "card",
+        "card_image_ratio": "square",
+        "card_gyro_effect": true,
+        "card_center_content": true,
+        "card_color_scheme": ""
+      }
+    },
+    "related": {
+      "type": "related-products",
+      "settings": {
+        "section_heading": "You may also like",
+        "section_heading_size": "h1",
+        "section_heading_animation": false,
+        "section_center_heading": false,
+        "section_description": "",
+        "section_color_scheme": "",
+        "gyro_effect": true,
+        "products_limit": 4,
+        "stack_grid_layout": "stack",
+        "stack_grid_desktop_columns": "3",
+        "stack_grid_mobile_columns": "2"
+      }
+    }
+  },
+  "order": [
+    "product",
+    "rich_text_jTEd8F",
+    "image_with_text_PXPPVF",
+    "video_with_text_QD4Ya9",
+    "image_with_text_LyRF3f",
+    "video_with_text_MiNNxJ",
+    "compared_images_rVaWUU",
+    "testimonials_9rkT7z",
+    "multicolumn_p7Ugw8",
+    "related"
+  ]
+}

@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_rdkeyT": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_item": "Home",
+            "first_image": "shopify://shop_images/Design_sans_titre_-_2025-09-25T012910.146_3a9ad4c5-9b62-4f02-a749-9096a3582be0.png",
+            "first_image_link": "",
+            "first_image_heading": "",
+            "first_image_color_scheme": "main",
+            "second_image_link": "",
+            "second_image_heading": "",
+            "second_image_color_scheme": "main"
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_rdkeyT"
+      ],
+      "settings": {
+        "layout": "logo-center",
+        "menu": "main-menu",
+        "enable_sticky": true,
+        "color_scheme": "",
+        "menu_color_scheme": "alt-3",
+        "enable_overlap": true,
+        "use_inverted_logo": true,
+        "logo_scale": 1.5,
+        "enable_mobile_scale": false
+      }
+    }
+  },
+  "order": [
+    "header"
+  ]
+}

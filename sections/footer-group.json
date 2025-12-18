@@ -1,0 +1,121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text_with_icons_e9JYcw": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_KzymmQ": {
+          "type": "item",
+          "settings": {
+            "feature_icon_svg": "check-circle",
+            "heading": "100% de mon activité",
+            "text": "Shopify et tout ce qui gravite autour 🌟",
+            "link": ""
+          }
+        },
+        "item_aB9cmR": {
+          "type": "item",
+          "settings": {
+            "feature_icon_svg": "tree",
+            "heading": "+100 clients",
+            "text": " Plus de 75 boutiques Shopify réalisées ⏳",
+            "link": ""
+          }
+        },
+        "item_JB9LDF": {
+          "type": "item",
+          "settings": {
+            "feature_icon_svg": "fire",
+            "heading": "Super Malter 3",
+            "text": "Parmi le top 5% des meilleurs freelances de Malt",
+            "link": ""
+          }
+        },
+        "item_bCrUTB": {
+          "type": "item",
+          "settings": {
+            "feature_icon_svg": "headset",
+            "heading": "Toujours à la pointe",
+            "text": "Titulaire d’un Bac+5 en Chef de Projets Digitaux",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_KzymmQ",
+        "item_aB9cmR",
+        "item_JB9LDF",
+        "item_bCrUTB"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "section_heading": "",
+        "section_heading_size": "h1",
+        "section_heading_animation": true,
+        "section_center_heading": true,
+        "section_description": "",
+        "section_color_scheme": "main",
+        "stack_grid_layout": "stack",
+        "stack_grid_desktop_columns": "4",
+        "stack_grid_mobile_columns": "1",
+        "center_content": true,
+        "feature_icon_size": "small"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_8qRG9p": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "show_logo": true,
+            "use_white_logo": true,
+            "description": "J’ai découvert Shopify pendant le Covid et je n’ai jamais décroché depuis. J’en ai fait mon bachelor puis mon master, tout en travaillant en alternance dans une agence Shopify et en parallèle en freelance sur différents projets. Aujourd’hui, je suis freelance à temps plein, avec une solide expérience et une vraie disponibilité pour accompagner toutes les marques. Cela fait des années que je ne fais que ça : créer, optimiser et développer des boutiques en ligne sur Shopify.",
+            "show_follow_on_shop": true,
+            "show_social_media": false
+          }
+        },
+        "menu_dCDwMj": {
+          "type": "menu",
+          "settings": {
+            "heading": "Raccourcis",
+            "link_list": ""
+          }
+        },
+        "menu_KkApPX": {
+          "type": "menu",
+          "settings": {
+            "heading": "Information",
+            "link_list": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_8qRG9p",
+        "menu_dCDwMj",
+        "menu_KkApPX"
+      ],
+      "settings": {
+        "color_scheme": "alt-3",
+        "show_payment": true,
+        "show_country_selector": true,
+        "show_language_selector": true
+      }
+    }
+  },
+  "order": [
+    "text_with_icons_e9JYcw",
+    "footer"
+  ]
+}
