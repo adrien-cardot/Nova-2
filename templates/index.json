@@ -6,1227 +6,285 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "sections": {
-    "hero_7jYrdg": {
+    "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
-        "heading_QXQX34": {
-          "type": "heading",
+        "text_YLPk4p": {
+          "type": "text",
+          "name": "t:names.heading",
           "settings": {
-            "heading_text": "SDFVTYUIKOIGFFGHJ",
-            "heading_size": "h1"
-          }
+            "text": "<p>Browse our latest products</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         },
-        "description_hykiYH": {
-          "type": "description",
-          "settings": {
-            "text_content": "<p>Un bon site web transforme les visiteurs en clients, je crée et optimise cet outil pour vous, quel que soit votre domaine ou votre marché cible.</p>",
-            "enlarge_text": false
-          }
-        },
-        "button_Rhhhik": {
+        "button_H9gpTf": {
           "type": "button",
+          "name": "t:names.button",
           "settings": {
-            "button_label": "Réserver un RDV découverte",
-            "button_variant": "outline",
-            "show_arrow": false,
-            "button_size": "md",
-            "button_link": "shopify://pages/contact"
-          }
+            "label": "Shop all",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-secondary",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "heading_QXQX34",
-        "description_hykiYH",
-        "button_Rhhhik"
+        "text_YLPk4p",
+        "button_H9gpTf"
       ],
-      "name": "Hero",
+      "name": "t:names.hero",
       "settings": {
-        "banner_image": "shopify://shop_images/aKQ4XKTt2nPbaczO_delsey.avif",
-        "banner_overlay": 60,
-        "banner_size": "screen",
-        "gyro_effect": true,
-        "scroll_clip": false,
-        "text_align": "center",
-        "content_position": "middle-center",
-        "content_box": false,
-        "color_scheme": "invert"
+        "media_type_1": "image",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "flex-end",
+        "align_baseline": true,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 24,
+        "section_width": "page-width",
+        "section_height": "medium",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-6",
+        "toggle_overlay": true,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 100,
+        "padding-block-end": 72
       }
     },
-    "vertical_image_scroller_Viwjtx": {
-      "type": "vertical-image-scroller",
+    "product_list_fa6P9H": {
+      "type": "product-list",
       "blocks": {
-        "image_eQbGHH": {
-          "type": "image",
+        "static-header": {
+          "type": "_product-list-content",
+          "name": "t:names.header",
+          "static": true,
           "settings": {
-            "image": "shopify://shop_images/68ee64150b46a3c03c164033_bdf73066acb280ca489ac2156db00f8e_Schoot.webp",
-            "image_ratio": "auto",
-            "x_position": 5,
-            "y_position": 15,
-            "width": 15,
-            "speed": "normal"
-          }
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_YFtzcL": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_list_button_MWeP9V": {
+              "type": "_product-list-button",
+              "name": "t:names.product_list_button",
+              "settings": {
+                "label": "View all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_YFtzcL",
+            "product_list_button_MWeP9V"
+          ]
         },
-        "image_RCRxRb": {
-          "type": "image",
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
           "settings": {
-            "image": "shopify://shop_images/68ee62d60337dcb02272ddbf_60e83c70341b96d53f420c27f16c9ac0_Aime.webp",
-            "image_ratio": "auto",
-            "x_position": 60,
-            "y_position": 0,
-            "width": 15,
-            "speed": "slow"
-          }
-        },
-        "image_raXcMi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DSC_4562_5a451eee-addb-4025-8347-ddf991deeb81.jpg",
-            "image_ratio": "auto",
-            "x_position": 80,
-            "y_position": 20,
-            "width": 8,
-            "speed": "slow"
-          }
-        },
-        "image_9BXdx4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/b8010100-d9a0-416d-b566-067555643535_nb-sc-elite-v4-2-_1.webp",
-            "image_ratio": "auto",
-            "x_position": 10,
-            "y_position": 50,
-            "width": 12,
-            "speed": "normal"
-          }
-        },
-        "image_WGA46W": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/IMG_7323.jpg",
-            "image_ratio": "auto",
-            "x_position": 95,
-            "y_position": 50,
-            "width": 10,
-            "speed": "normal"
-          }
-        },
-        "image_xhRQ6n": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_-_2025-10-23T114148.148.png",
-            "image_ratio": "auto",
-            "x_position": 20,
-            "y_position": 75,
-            "width": 12,
-            "speed": "fast"
-          }
-        },
-        "image_ymHgbm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/photo_cafes_quotidien_1.webp",
-            "image_ratio": "auto",
-            "x_position": 0,
-            "y_position": 90,
-            "width": 10,
-            "speed": "fast"
-          }
-        },
-        "image_PcU3Rd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DSCF5643.jpg",
-            "image_ratio": "auto",
-            "x_position": 25,
-            "y_position": 60,
-            "width": 8,
-            "speed": "slow"
-          }
-        },
-        "image_PYDztE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/design-sans-titre-2-1200x1200.png",
-            "image_ratio": "auto",
-            "x_position": 80,
-            "y_position": 100,
-            "width": 12,
-            "speed": "fast"
-          }
-        },
-        "image_Ghj9nB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/68ee62d60337dcb02272ddbf_60e83c70341b96d53f420c27f16c9ac0_Aime.webp",
-            "image_ratio": "auto",
-            "x_position": 95,
-            "y_position": 95,
-            "width": 15,
-            "speed": "normal"
-          }
-        },
-        "image_hDbJxg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1733763930582.png",
-            "image_ratio": "auto",
-            "x_position": 80,
-            "y_position": 80,
-            "width": 15,
-            "speed": "slow"
-          }
+            "product_card_gap": 4,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_677WP3": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_YXxMTj": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_JQzVV4": {
+              "type": "price",
+              "name": "t:names.product_price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_677WP3",
+            "product_title_YXxMTj",
+            "price_JQzVV4"
+          ]
         }
       },
-      "block_order": [
-        "image_eQbGHH",
-        "image_RCRxRb",
-        "image_raXcMi",
-        "image_9BXdx4",
-        "image_WGA46W",
-        "image_xhRQ6n",
-        "image_ymHgbm",
-        "image_PcU3Rd",
-        "image_PYDztE",
-        "image_Ghj9nB",
-        "image_hDbJxg"
-      ],
-      "disabled": true,
-      "name": "Vertical image scroller",
+      "name": "Featured collection",
       "settings": {
-        "text_align": "center",
-        "heading_text": "Libérez TOUTE la puissance de votre Shopify",
-        "heading_animation": true,
-        "heading_size": "h2",
-        "text_content": "<strong>Un bon site web transforme les visiteurs en clients</strong>, je crée et optimise cet outil pour vous, quel que soit votre domaine ou votre marché cible.",
-        "button_label": "Être recontacté",
-        "button_variant": "outline",
-        "button_link": "shopify://pages/contact",
-        "color_scheme": "invert"
-      }
-    },
-    "hero": {
-      "type": "hero",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading_text": "Libérez TOUTE la puissance de votre Shopify",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "description",
-          "settings": {
-            "text_content": "<p><strong>Un bon site web transforme les visiteurs en clients</strong>, je crée et optimise cet outil pour vous, quel que soit votre domaine ou votre marché cible.<br/></p>",
-            "enlarge_text": true
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Prendre RDV",
-            "button_variant": "fill",
-            "show_arrow": false,
-            "button_size": "md",
-            "button_link": "https://calendar.notion.so/meet/adrien_cardot/o055f3qba"
-          }
-        },
-        "button_N4gin8": {
-          "type": "button",
-          "settings": {
-            "button_label": "Portfollio",
-            "button_variant": "outline",
-            "show_arrow": false,
-            "button_size": "md",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button",
-        "button_N4gin8"
-      ],
-      "disabled": true,
-      "settings": {
-        "banner_image": "shopify://shop_images/688beb9852829aa12465a6ed_6711070395543e4218714648_bandeau-offre.webp",
-        "banner_overlay": 92,
-        "banner_size": "screen",
-        "gyro_effect": true,
-        "scroll_clip": true,
-        "text_align": "left",
-        "content_position": "middle-left",
-        "content_box": false,
-        "color_scheme": "invert"
-      }
-    },
-    "vertical_image_scroller_4GG7aR": {
-      "type": "vertical-image-scroller",
-      "blocks": {
-        "image_4QRFRx": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 94,
-            "y_position": 100,
-            "width": 11,
-            "speed": "slow"
-          }
-        },
-        "image_BKBrUd": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 10,
-            "y_position": 40,
-            "width": 10,
-            "speed": "normal"
-          }
-        },
-        "image_VxYWah": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 20,
-            "y_position": 75,
-            "width": 12,
-            "speed": "fast"
-          }
-        },
-        "image_RirPcp": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 9,
-            "y_position": 89,
-            "width": 12,
-            "speed": "slow"
-          }
-        },
-        "image_K8eVb8": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 0,
-            "y_position": 89,
-            "width": 12,
-            "speed": "fast"
-          }
-        },
-        "image_hMfTNw": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 80,
-            "y_position": 100,
-            "width": 9,
-            "speed": "fast"
-          }
-        },
-        "image_Txp4HR": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 95,
-            "y_position": 50,
-            "width": 11,
-            "speed": "normal"
-          }
-        },
-        "image_MBhDXi": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 79,
-            "y_position": 0,
-            "width": 11,
-            "speed": "slow"
-          }
-        },
-        "image_WnmKEA": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 80,
-            "y_position": 20,
-            "width": 15,
-            "speed": "slow"
-          }
-        },
-        "image_6PLn9z": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 5,
-            "y_position": 15,
-            "width": 11,
-            "speed": "normal"
-          }
-        },
-        "video_DWUFXX": {
-          "type": "video",
-          "settings": {
-            "image_ratio": "square",
-            "x_position": 5,
-            "y_position": 15,
-            "width": 11,
-            "speed": "normal"
-          }
-        },
-        "image_x4AN3R": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 95,
-            "y_position": 100,
-            "width": 18,
-            "speed": "normal"
-          }
-        },
-        "image_9aXBTi": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 50,
-            "y_position": 50,
-            "width": 18,
-            "speed": "normal"
-          }
-        },
-        "image_UYRgnq": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "auto",
-            "x_position": 11,
-            "y_position": 86,
-            "width": 17,
-            "speed": "normal"
-          }
-        }
-      },
-      "block_order": [
-        "image_4QRFRx",
-        "image_BKBrUd",
-        "image_VxYWah",
-        "image_RirPcp",
-        "image_K8eVb8",
-        "image_hMfTNw",
-        "image_Txp4HR",
-        "image_MBhDXi",
-        "image_WnmKEA",
-        "image_6PLn9z",
-        "video_DWUFXX",
-        "image_x4AN3R",
-        "image_9aXBTi",
-        "image_UYRgnq"
-      ],
-      "disabled": true,
-      "settings": {
-        "text_align": "center",
-        "heading_text": "Un expert à vos côtés",
-        "heading_animation": true,
-        "heading_size": "d3",
-        "text_content": "Avec plus de <strong>3 ans d’expérience</strong> et plus d’une <strong>centaine de boutiques réalisées</strong>, j’accompagne chaque projet avec rigueur et réactivité. <strong>Freelance à temps plein</strong>, j’ai optimisé ma façon de travailler pour offrir une <strong>collaboration simple, efficace et FIABLE</strong>.",
-        "button_label": "PRENDRE RDV",
-        "button_variant": "outline",
-        "button_link": "",
-        "color_scheme": "main"
-      }
-    },
-    "featured_collection_zrd8wy": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "portfolio",
-        "max_products": 50,
-        "section_heading": "Étude de cas",
-        "section_heading_size": "h2",
-        "section_heading_animation": true,
-        "section_center_heading": false,
-        "section_description": "Ne me croyez pas sur parole, visitez mes récentes réalisations",
-        "section_color_scheme": "alt",
-        "show_view_all": true,
-        "stack_grid_layout": "stack",
-        "stack_grid_desktop_columns": "3",
-        "stack_grid_mobile_columns": "1",
-        "gyro_effect": true,
-        "show_banner": true,
-        "banner_position": "last",
-        "banner_color_scheme": "invert",
-        "banner_image": "shopify://shop_images/Design_sans_titre.png",
-        "show_banner_view_all": true
-      }
-    },
-    "image_with_text_jAfxdb": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_G9xY3p": {
-          "type": "heading",
-          "settings": {
-            "heading_text": "Un expert à vos côtés",
-            "heading_animation": true,
-            "heading_size": "h1"
-          }
-        },
-        "countdown_MPbY37": {
-          "type": "countdown",
-          "settings": {
-            "time": "31-09-2025"
-          }
-        },
-        "description_dxVTk8": {
-          "type": "description",
-          "settings": {
-            "text_content": "<p>Avec plus de <strong>3 ans d’expérience</strong> et plus d’une <strong>centaine de boutiques d'expérience</strong>, j’accompagne chaque projet avec rigueur et réactivité. <strong>Freelance à temps plein</strong>, j’ai optimisé ma façon de travailler pour offrir une <strong>collaboration simple, efficace et FIABLE</strong>.</p>",
-            "enlarge_text": false
-          }
-        },
-        "button_akYMDa": {
-          "type": "button",
-          "settings": {
-            "button_label": "Présentation",
-            "button_variant": "fill",
-            "show_arrow": false,
-            "button_size": "md",
-            "button_link": "https://calendar.notion.so/meet/adrien_cardot/o055f3qba"
-          }
-        },
-        "button_zQWtzc": {
-          "type": "button",
-          "settings": {
-            "button_label": "VOIR LE PORFOLLIO",
-            "button_variant": "link",
-            "show_arrow": false,
-            "button_size": "md",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_G9xY3p",
-        "countdown_MPbY37",
-        "description_dxVTk8",
-        "button_akYMDa",
-        "button_zQWtzc"
-      ],
-      "settings": {
-        "color_scheme": "alt-3",
-        "hover_parallax": true,
-        "use_bg": true,
-        "image": "shopify://shop_images/IMG_7874_5b460e8c-8f3a-4230-810f-4c9469d3d507.png",
-        "image_position": "left",
-        "image_width": "medium",
-        "image_size": "auto",
-        "text_align": "left",
-        "content_position": "middle-left"
-      }
-    },
-    "rich_text_PV6QUm": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_8KzFCp": {
-          "type": "heading",
-          "settings": {
-            "heading_text": "Un but : votre succès",
-            "heading_animation": true,
-            "heading_size": "h1"
-          }
-        },
-        "description_PfJn6H": {
-          "type": "description",
-          "settings": {
-            "text_content": "<p><br/>Mon but est de créer un site qui pousse votre activité vers le haut.<br/>J’y mets mon expérience, mon énergie et une vraie vision du résultat.<br/>Chaque choix est fait pour soutenir votre croissance.<br/>Votre réussite devient aussi un peu la mienne.</p>",
-            "enlarge_text": false
-          }
-        },
-        "button_EAwkE4": {
-          "type": "button",
-          "settings": {
-            "button_label": "Démarrer votre projet",
-            "button_variant": "outline",
-            "show_arrow": false,
-            "button_size": "md",
-            "button_link": "shopify://pages/contact"
-          }
-        }
-      },
-      "block_order": [
-        "heading_8KzFCp",
-        "description_PfJn6H",
-        "button_EAwkE4"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "color_scheme": "",
-        "text_align": "center",
-        "image_overlay": 30,
-        "blur_image": false
-      }
-    },
-    "compared_images_FBgcVD": {
-      "type": "compared-images",
-      "blocks": {
-        "before_image_XyLACg": {
-          "type": "beforeImage",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Site_de_Running___Chaussures_et_Equipements_1_60db7e6f-52ff-430c-a75d-3a29c28b1d54.png",
-            "heading_text": "Avant",
-            "subheading_text": "",
-            "text_content": "Sur Woocommerce",
-            "color_scheme": "invert"
-          }
-        },
-        "after_image_GyrXgG": {
-          "type": "afterImage",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Capture_d_ecran_2025-10-30_161548.png",
-            "heading_text": "Après",
-            "subheading_text": "+ 220% de conversion",
-            "text_content": "Sur Shopify",
-            "color_scheme": "invert"
-          }
-        }
-      },
-      "block_order": [
-        "before_image_XyLACg",
-        "after_image_GyrXgG"
-      ],
-      "name": "Compared images",
-      "settings": {
-        "section_heading": "Mes services",
-        "section_heading_size": "h1",
-        "section_heading_animation": true,
-        "section_center_heading": true,
-        "section_description": "",
-        "section_color_scheme": "main",
-        "image_size": "auto",
-        "text_position": "bottom"
-      }
-    },
-    "ss_counter_dkCHhA": {
-      "type": "ss-counter",
-      "blocks": {
-        "word_rNbLe7": {
-          "type": "word",
-          "settings": {
-            "text": "Expert"
-          }
-        },
-        "word_HiFfQy": {
-          "type": "word",
-          "settings": {
-            "text": "Shopify"
-          }
-        },
-        "word_pYFAME": {
-          "type": "word",
-          "settings": {
-            "text": "Freelance"
-          }
-        }
-      },
-      "block_order": [
-        "word_rNbLe7",
-        "word_HiFfQy",
-        "word_pYFAME"
-      ],
-      "disabled": true,
-      "name": "SS - Counter",
-      "settings": {
-        "heading": "Our best seller",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 48,
-        "heading_size_mobile": 32,
-        "heading_height": 130,
-        "heading_align": "center",
-        "counter_mt": 32,
-        "counter_delay": 3.5,
-        "counter_card_radius": 16,
-        "counter_card_radius_mobile": 10,
-        "counter_custom": true,
-        "counter_font": "montserrat_n8",
-        "text": "Gear up for the busiest season of the year with the flip-flap, put-your-business-on-the-map centerpiece.",
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 22,
-        "text_size_mobile": 20,
-        "text_height": 130,
-        "text_align": "center",
-        "text_mt": 32,
-        "button": "Shop now",
-        "button_url": "",
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 20,
-        "button_size_mobile": 18,
-        "button_height": 130,
-        "button_align": "center",
-        "button_mt": 16,
-        "button_padding_vertical": 16,
-        "button_padding_horizontal": 40,
-        "button_radius": 100,
-        "button_border_thickness": 0,
-        "heading_color": "#000000",
-        "card_bg_color": "#333232",
-        "card_text_color": "#ffffff",
-        "text_color": "#000000",
-        "button_color": "#ffffff",
-        "button_hover_color": "#ffffff",
-        "button_bg_color": "#000000",
-        "button_bg_hover_color": "#000000",
-        "button_border_color": "#000000",
-        "button_border_hover_color": "#000000",
-        "background_color": "#4bfe85",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": true,
-        "content_width": 120,
-        "border_thickness": 0
-      }
-    },
-    "text_with_images_mC7qYb": {
-      "type": "text-with-images",
-      "blocks": {
-        "image_XadiK7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Personnage_interactif_avec_fenetre_web.png",
-            "link": ""
-          }
-        },
-        "text_z3Lnxa": {
-          "type": "text",
-          "settings": {
-            "text_content": "Domaines",
-            "link": ""
-          }
-        },
-        "image_HFBkcr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_5_dec._2025_15_54_20.png",
-            "link": ""
-          }
-        },
-        "text_WCa79f": {
-          "type": "text",
-          "settings": {
-            "text_content": "D'expertises",
-            "link": ""
-          }
-        },
-        "image_7yxiTc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_5_dec._2025_18_07_58.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_XadiK7",
-        "text_z3Lnxa",
-        "image_HFBkcr",
-        "text_WCa79f",
-        "image_7yxiTc"
-      ],
-      "custom_css": [
-        "picture img {border-radius: 12px;}"
-      ],
-      "name": "Text with images",
-      "settings": {
-        "color_scheme": "",
-        "text_align": "center",
-        "size": "h2",
-        "image_overlay": 30,
-        "blur_image": false
-      }
-    },
-    "scrolling_hero_images_zWiLVa": {
-      "type": "scrolling-hero-images",
-      "blocks": {
-        "video_HN6BAq": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "image_overlay": 21,
-            "subheading_text": "",
-            "heading_text": "Création de A à Z",
-            "heading_size": "h1",
-            "text_content": "Création | Automatisation des emails | Formation Shopify | SEO",
-            "button_label": "Voir les créations",
-            "button_variant": "outline",
-            "button_link": "",
-            "content_position": "middle-right",
-            "text_align": "left",
-            "color_scheme": "invert"
-          }
-        },
-        "image_AJAjVi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/688beb9852829aa12465a6ed_6711070395543e4218714648_bandeau-offre.webp",
-            "image_overlay": 70,
-            "subheading_text": "",
-            "heading_text": "Création & refonte",
-            "heading_size": "h1",
-            "text_content": "Création | Automatisation des emails | Formation Shopify | SEO",
-            "button_label": "Voir les créations",
-            "button_variant": "outline",
-            "button_link": "",
-            "content_position": "middle-right",
-            "text_align": "left",
-            "color_scheme": ""
-          }
-        },
-        "image_Pn6r4t": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Capture_d_ecran_2025-10-30_161548.png",
-            "image_overlay": 70,
-            "subheading_text": "",
-            "heading_text": "Migration vers Shopify",
-            "heading_size": "h1",
-            "text_content": "Migration vers Shopify | Automatisation des emails | Formation Shopify | SEO",
-            "button_label": "Voir les migrations",
-            "button_variant": "outline",
-            "button_link": "",
-            "content_position": "middle-left",
-            "text_align": "left",
-            "color_scheme": ""
-          }
-        },
-        "image_mdkFDD": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/b44139cb-5a20-4973-b4c7-c1d5b576b11f.webp",
-            "image_overlay": 70,
-            "subheading_text": "",
-            "heading_text": "Optimisation SHOPIFY  ET SEO",
-            "heading_size": "h1",
-            "text_content": "Améliorations UI/UX | Stratégie marketing | Référencement Google...",
-            "button_label": "Voir les OPTIMISATIONS",
-            "button_variant": "outline",
-            "button_link": "",
-            "content_position": "middle-right",
-            "text_align": "left",
-            "color_scheme": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_HN6BAq",
-        "image_AJAjVi",
-        "image_Pn6r4t",
-        "image_mdkFDD"
-      ],
-      "settings": {
-        "heading_animation": true,
-        "scroll_clip": true
-      }
-    },
-    "marquee_V7XALJ": {
-      "type": "marquee",
-      "blocks": {
-        "image_8htKzz": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "link": ""
-          }
-        },
-        "text_KRdzCn": {
-          "type": "text",
-          "settings": {
-            "text": "SUPER MALTER 3",
-            "link": ""
-          }
-        },
-        "image_m4XwLr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/66c7106d035ebd882919f4d3_SPM3dark-p-500.png",
-            "link": ""
-          }
-        },
-        "text_nPDFa7": {
-          "type": "text",
-          "settings": {
-            "text": "SHOPIFY PARTNER",
-            "link": ""
-          }
-        },
-        "image_JqEBf7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/partners.png",
-            "link": ""
-          }
-        },
-        "text_tNBdaj": {
-          "type": "text",
-          "settings": {
-            "text": "Shopify plus",
-            "link": ""
-          }
-        },
-        "image_47nVcY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Shopify-Plus-Partner-removebg-preview.png",
-            "link": ""
-          }
-        },
-        "text_V9qTzV": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Hiking",
-            "link": ""
-          }
-        },
-        "image_mxfKK6": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "link": ""
-          }
-        },
-        "text_EB9gRp": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Canyoning",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_8htKzz",
-        "text_KRdzCn",
-        "image_m4XwLr",
-        "text_nPDFa7",
-        "image_JqEBf7",
-        "text_tNBdaj",
-        "image_47nVcY",
-        "text_V9qTzV",
-        "image_mxfKK6",
-        "text_EB9gRp"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "main",
-        "content_size": "h1",
-        "type": "scroll",
-        "stop_on_hover": true,
-        "direction": "normal",
-        "speed": "1",
-        "space_between": "medium"
-      }
-    },
-    "compared_images_cbPU6E": {
-      "type": "compared-images",
-      "blocks": {
-        "before_image_yKW8Ya": {
-          "type": "beforeImage",
-          "settings": {
-            "image": "shopify://shop_images/Site_de_Running___Chaussures_et_Equipements_1_60db7e6f-52ff-430c-a75d-3a29c28b1d54.png",
-            "heading_text": "Avant",
-            "subheading_text": "",
-            "text_content": "Sur Woocommerce",
-            "color_scheme": "invert"
-          }
-        },
-        "after_image_cXyMqN": {
-          "type": "afterImage",
-          "settings": {
-            "image": "shopify://shop_images/Capture_d_ecran_2025-10-30_161548.png",
-            "heading_text": "Après",
-            "subheading_text": "",
-            "text_content": "Sur Shopify",
-            "color_scheme": "invert"
-          }
-        }
-      },
-      "block_order": [
-        "before_image_yKW8Ya",
-        "after_image_cXyMqN"
-      ],
-      "custom_css": [
-        ".compared-images__before .banner__image img,.compared-images__after .banner__image img {mix-blend-mode: multiply;}"
-      ],
-      "name": "Compared images",
-      "settings": {
-        "section_heading": "Exemple de migration",
-        "section_heading_size": "h1",
-        "section_heading_animation": true,
-        "section_center_heading": true,
-        "section_description": "Migration complète vers Shopify : importation des données clients, commandes, produits, collections et menus, blogs, sauvegarde des contenus, optimisation SEO (avec redirection des anciens liens) et refonte visuelle complète pour un site plus moderne et performant.",
-        "section_color_scheme": "alt",
-        "image_size": "auto",
-        "text_position": "bottom"
-      }
-    },
-    "scrolling_image_reveal_w8EN9t": {
-      "type": "scrolling-image-reveal",
-      "blocks": {
-        "image_EdWfn4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_5_dec._2025_15_54_20.png",
-            "image_ratio": "square",
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Code propre et optimisé pour les performances de la boutique, avec un focus sur le SEO.",
-            "heading_size": "h5",
-            "text_content": "",
-            "color_scheme": ""
-          }
-        },
-        "image_EbLk3G": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Personnage_interactif_avec_fenetre_web.png",
-            "image_ratio": "auto",
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Boutique facilement personnalisable par le client via l'éditeur de thème",
-            "heading_size": "h5",
-            "text_content": "",
-            "color_scheme": ""
-          }
-        },
-        "image_KDbYgf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_5_dec._2025_16_18_38.png",
-            "image_ratio": "auto",
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Mission finalisée : mon client n'est pas dépendant de moi, il peut gérer son site de A à Z",
-            "heading_size": "h5",
-            "text_content": "",
-            "color_scheme": ""
-          }
-        },
-        "video_KJLF7P": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "image_ratio": "auto",
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Banner heading",
-            "heading_size": "h4",
-            "text_content": "Describe a product, make announcements, or welcome customers to your store.",
-            "color_scheme": "invert"
-          }
-        },
-        "image_y4aQ6e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_5_dec._2025_18_07_58.png",
-            "image_ratio": "auto",
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Conseils, formation et accompagnement client pour son développement",
-            "heading_size": "h5",
-            "text_content": "",
-            "color_scheme": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_EdWfn4",
-        "image_EbLk3G",
-        "image_KDbYgf",
-        "video_KJLF7P",
-        "image_y4aQ6e"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading_text": " Expert Shopify dans les règles de l'art !",
-        "heading_animation": true,
-        "heading_size": "h1",
-        "color_scheme": "invert",
-        "description": "Find Your Perfect Match: Outdoor Gear Collections for Every Activity!",
-        "gyro_effect": true,
-        "scroll_clip": false
-      }
-    },
-    "horizontal_image_scroller_ADgRcH": {
-      "type": "horizontal-image-scroller",
-      "blocks": {
-        "video_wWnnWM": {
-          "type": "video",
-          "settings": {
-            "banner_overlay": 18,
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Mountains call",
-            "heading_size": "h3",
-            "text_content": "Performance Meets Precision. Discover the Pro Gear Collection.",
-            "content_position": "bottom-left",
-            "color_scheme": "invert"
-          }
-        },
-        "image_g3QpGq": {
-          "type": "image",
-          "settings": {
-            "banner_overlay": 0,
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Solid Choice",
-            "heading_size": "h4",
-            "text_content": "Explore Black Diamond Brand.",
-            "content_position": "bottom-left",
-            "color_scheme": "main"
-          }
-        },
-        "image_FhLHF4": {
-          "type": "image",
-          "settings": {
-            "banner_overlay": 0,
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Load Ready",
-            "heading_size": "h4",
-            "text_content": "Top of the Line 'Mission' Backpacks.",
-            "content_position": "bottom-left",
-            "color_scheme": "invert"
-          }
-        },
-        "image_pzVcnX": {
-          "type": "image",
-          "settings": {
-            "banner_overlay": 0,
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Versatile & Performant",
-            "heading_size": "h4",
-            "text_content": "La Sportiva New Collection.",
-            "content_position": "bottom-left",
-            "color_scheme": "main"
-          }
-        },
-        "image_dc8Ufq": {
-          "type": "image",
-          "settings": {
-            "banner_overlay": 0,
-            "link": "",
-            "subheading_text": "",
-            "heading_text": "Keep it Clean",
-            "heading_size": "h4",
-            "text_content": "Shop Our Purified Bottles Collection.",
-            "content_position": "bottom-left",
-            "color_scheme": "invert"
-          }
-        }
-      },
-      "block_order": [
-        "video_wWnnWM",
-        "image_g3QpGq",
-        "image_FhLHF4",
-        "image_pzVcnX",
-        "image_dc8Ufq"
-      ],
-      "settings": {
-        "scroll_clip": false,
-        "gyro_effect": true,
-        "scatter_images": true,
-        "image_width": "normal",
-        "subheading_text": "BLOG 100% SHOPIFY",
-        "heading_text": "MES CONSEILS",
-        "heading_animation": true,
-        "heading_size": "h1",
-        "text_content": "Top Picks for Top Adventures: Handpicked Gear for Your Next Outdoor Journey!",
-        "button_label": "Find More",
-        "button_variant": "link",
-        "button_link": "",
-        "color_scheme": "alt-3"
-      }
-    },
-    "contact_form_MDbrap": {
-      "type": "contact-form",
-      "blocks": {
-        "text_TcrFeG": {
-          "type": "text",
-          "settings": {
-            "field_label": "Quel entreprise représenentez-vous ?",
-            "width": "6",
-            "is_required": false
-          }
-        },
-        "email_d8pKV3": {
-          "type": "email",
-          "settings": {
-            "field_label": "Email",
-            "width": "6"
-          }
-        },
-        "phone_number_rKLX38": {
-          "type": "phone_number",
-          "settings": {
-            "field_label": "Numéro de téléphone",
-            "width": "12",
-            "is_required": false
-          }
-        },
-        "textarea_X6yEJB": {
-          "type": "textarea",
-          "settings": {
-            "field_label": "Votre besoin",
-            "width": "12",
-            "is_required": false
-          }
-        }
-      },
-      "block_order": [
-        "text_TcrFeG",
-        "email_d8pKV3",
-        "phone_number_rKLX38",
-        "textarea_X6yEJB"
-      ],
-      "name": "Contact form",
-      "settings": {
-        "section_heading": "Être recontacté",
-        "section_heading_size": "h1",
-        "section_heading_animation": true,
-        "section_center_heading": true,
-        "section_description": "",
-        "section_color_scheme": ""
+        "collection": "all",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 8,
+        "columns": 4,
+        "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 8,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     }
   },
   "order": [
-    "hero_7jYrdg",
-    "vertical_image_scroller_Viwjtx",
-    "hero",
-    "vertical_image_scroller_4GG7aR",
-    "featured_collection_zrd8wy",
-    "image_with_text_jAfxdb",
-    "rich_text_PV6QUm",
-    "compared_images_FBgcVD",
-    "ss_counter_dkCHhA",
-    "text_with_images_mC7qYb",
-    "scrolling_hero_images_zWiLVa",
-    "marquee_V7XALJ",
-    "compared_images_cbPU6E",
-    "scrolling_image_reveal_w8EN9t",
-    "horizontal_image_scroller_ADgRcH",
-    "contact_form_MDbrap"
+    "hero_jVaWmY",
+    "product_list_fa6P9H"
   ]
 }
